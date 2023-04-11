@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1f1f1f;
+}
+
+.icone {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-variant: small-caps;
+    letter-spacing: .4rem;
+    color: #fff;
+}
+
+p {
+    font-size: .8rem;
+    font-variant: small-caps;
+    color: #858383;
+    letter-spacing: 5px;
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 10px;
+    border: 1px solid #1f1f1f;
+    border-radius: 5px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.card > .icon {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.card > .name {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card > .description {
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+.card > .techs {
+    display: flex;
+    margin-top: 10px;
+    color: #1f1f1f;;
+}
+
+.card > .techs > ul {
+    display: flex;
+    color: #1f1f1f;
+}
+
+.card > .techs > ul > li {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.card:hover {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card:hover > .description {
+    color: #fff;
+    transition: .2s;
+}
+
+.card:hover > .techs > ul {
+    color: #fff;
+    transition: .2s;
+}
+
+.direction-form {
+    margin-top: 40px;
+    font-size: 1.7rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.formulario {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.formulario > h2 {
+    color: #000;
+    font-variant: small-caps;
+    margin-bottom: 30px;
+}
+
+.formulario > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.formulario > form > input,textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: .7rem;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #afaeae;
+}
+
+.formulario > form > button {
+    width: 30%;
+    padding: .3rem;
+    cursor: pointer;
+}
